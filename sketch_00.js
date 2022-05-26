@@ -31,13 +31,13 @@ function draw() {
 
   noStroke()
   fill(color)
-  ellipse(x, y, size + xOff)
+  ellipse(x, y, sizeShape + xOff)
 
   let z = map(noise(zOff), 0, 1, 0, width)
   let w = map(noise(wOff), 0, 1, 0, height)
   noStroke()
   fill(color)
-  ellipse(z, w, size + wOff)
+  ellipse(z, w, sizeShape + wOff)
 
   xOff += 0.005
   yOff += 0.01
